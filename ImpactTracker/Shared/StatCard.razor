@@ -1,0 +1,28 @@
+<div class="max-w-sm rounded overflow-hidden shadow-lg text-center">
+    <img
+        src="@ImageSrc"
+        alt="Image for @Title"
+        class="w-full">
+    <div class="px-5 py-4">
+        <div class="text-xl font-bold mb-2">@Title</div>
+    </div>
+    <div class="px-5 py-4">
+        <p class="text-center text-gray-700 text-6xl">@Value</p>
+        <p class="text-sm">@Description</p>
+    </div>
+</div>
+
+@code
+{
+    [Parameter]
+    public string Title { get; set; }
+
+    [Parameter]
+    public string Description { get; set; }
+
+    [Parameter]
+    public double Value { get; set; }
+
+    [Parameter]
+    public string ImageSrc { get; set; }
+}
